@@ -17,3 +17,5 @@ El modelo de trabajo Open Source beneficia mucho a la plataforma.
 Node existe gracias a un componente principal que se llama V8, que es el que nos permite utilizar JavaScript del lado del servidor.
 
 "
+
+V8 es la maquina virtual de Google Chrome  para desarrollar Javascript fuera del navegador.
