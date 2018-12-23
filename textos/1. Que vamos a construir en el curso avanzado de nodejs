@@ -1,0 +1,10 @@
+En este curso vamos a construir una plataforma de IoT donde vamos a enfatizar mucho en todo lo que son los conceptos 
+de programacion en tiempo real, ademas de usar las ultimas caracteristicas de javascript con ES5 ES6 donde vamos a usar 
+cosas como async await, programacion asincrona con promesas, trabajar con patrones de emision de eventos, como trabajar 
+con bases de datos relacionales dentro de un proyecto node.js en este caso vamos a trabajar con postgresql y vamos a ver 
+como podemos integrar toda esta plataforma de IoT con un servidor con graficas que van a estar actualizandose en tiempo
+real de unos sensores y unas metricas que nosotros tmb vamos a estar integrando en nuestra aplicacion.
+
+Se va a tener convertura de pruebas, covertura de pruebas, vamos a tener conceptos de moks y stubs de diferentes objetos
+en el momento de hacer las pruebas de nuestra aplicacion, ademas de buenas practicas y tecnicas avanzadas para desarrollar
+con nodejs.
