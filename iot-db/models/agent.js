@@ -12,15 +12,15 @@ module.exports = function setupAgentModel (config) {
       allowNull: false
     },
     username: {
-      tyoe: Sequelize.STRING,
+      type: Sequelize.STRING,
       allowNull: false
     },
     name: {
-      tyoe: Sequelize.STRING,
+      type: Sequelize.STRING,
       allowNull: false
     },
     hostname: {
-      tyoe: Sequelize.STRING,
+      type: Sequelize.STRING,
       allowNull: false
     },
     pid: {
