@@ -18,4 +18,33 @@ Node existe gracias a un componente principal que se llama V8, que es el que nos
 
 "
 
-V8 es la maquina virtual de Google Chrome  para desarrollar Javascript fuera del navegador.
+V8 -> Maquina virtual de JS de google chrome.
+
+libuv -> librería encargada de manejar el event loop, operaciones de red y operaciones de entrada y salida de archivos.
+
+
+############################
+
+Para que es bueno
+
+Aplicaciones en Red
+Aplicaciones de entrada y salida
+Orquestación entre múltiples aplicaciones
+
+Para que no es bueno
+
+Bigdata
+Muchos datos no es entrada y salida, necesita mucha CPU
+Aplicaciones de Sistemas y para manejar componentes nativas.
+
+#######################################
+
+¿Qué tipo de aplicaciones podemos desarrollar con Node.js?
+Node.js es el proyecto open source con el crecimiento más rápido del mundo en este momento. Muchas empresas están empezando no solo a utilizarlo sino a contribuir y patrocinar y tienen empleados dedicados a que aporten al proyecto y eso es lo que permite que tenga un crecimiento tan grande.
+
+¿Qué tipo de aplicaciones podemos desarrollar?
+
+- Aplicaciones de escritorio.
+- Dispositivos embebidos.
+- Servidores web.
+- Aplicaciones móviles: hace poco anunciaron el soporte para Android.
