@@ -1,0 +1,27 @@
+{
+  "name": "iot-db",
+  "version": "1.0.0",
+  "description": "A simple IoT Platform - DB Module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubenqc/app-iot.git"
+  },
+  "author": "Ruben QC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rubenqc/app-iot/issues"
+  },
+  "homepage": "https://github.com/rubenqc/app-iot#readme",
+  "devDependencies": {
+    "standard": "^12.0.1"
+  },
+  "dependencies": {
+    "mysql2": "^1.6.4",
+    "sequelize": "^4.42.0"
+  }
+}
