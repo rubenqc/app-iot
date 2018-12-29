@@ -4,8 +4,9 @@
   "description": "A simple IoT Platform - DB Module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "standard"
+    "test": "SET DEBUG=iot-node:* && nyc --reporter=lcov ava tests/ --verbose",
+    "lint": "standard",
+    "setup": "SET DEBUG=iot-node:* && node setup.js"
   },
   "repository": {
     "type": "git",
@@ -18,9 +19,18 @@
   },
   "homepage": "https://github.com/rubenqc/app-iot#readme",
   "devDependencies": {
+    "ava": "^1.0.1",
+    "nyc": "^13.1.0",
+    "proxyquire": "^2.1.0",
+    "sinon": "^7.2.2",
+    "sqlite3": "^4.0.4",
     "standard": "^12.0.1"
   },
   "dependencies": {
+    "chalk": "^2.4.1",
+    "debug": "^4.1.1",
+    "defaults": "^1.0.3",
+    "inquirer": "^6.2.1",
     "mysql2": "^1.6.4",
     "sequelize": "^4.42.0"
   }

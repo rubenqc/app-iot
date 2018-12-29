@@ -7,11 +7,11 @@ module.exports = function setupMetricModel (config) {
   const sequelize = setupDatabase(config)
 
   return sequelize.define('metric', {
-    uuid: {
+    type: {
       type: Sequelize.STRING,
       allowNull: false
     },
-    username: {
+    value: {
       type: Sequelize.TEXT,
       allowNull: false
     }
