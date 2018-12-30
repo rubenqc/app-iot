@@ -1,11 +1,11 @@
 'use strict'
 
-let count = 20
+// let count = 20
 
 const metric = {
   id: 1,
-  uuid: 'xxx-xxx-xxx',
-  username: 'ruben',
+  type: 'teperatura',
+  value: '10.5',
   createdAt: Date(),
   updatedAt: Date(),
   agentId: 1
@@ -13,9 +13,10 @@ const metric = {
 
 const metrics = [
   metric,
-  extend(metric, { id: 2, uuid: 'xxx-xxx-xxy', username: 'test', agentId: 2 }),
-  extend(metric, { id: 3, uuid: 'xxx-xxx-xxz', agentId: 2 }),
-  extend(metric, { id: 4, uuid: 'xxx-xxx-xxxw', agentId: 2 })
+  extend(metric, { id: 2, type: 'energia', value: '11.2', agentId: 2 }),
+  extend(metric, { id: 3, type: 'temperatura', agentId: 2 }),
+  extend(metric, { id: 4, type: 'presion', agentId: 2 })
+
 ]
 
 function extend (obj, values) {
@@ -26,6 +27,6 @@ function extend (obj, values) {
 module.exports = {
   single: metric,
   all: metrics,
-  findByAgentUuid: id => metrics.filter(a => a.agentId === id),
-  findByTypeAgentUuid: (type, id) => metrics.filter(a => a.agentId === id && a.type === type)
+  findByAgentId: id => metrics.filter(a => a.agentId === id),
+  findByAgentType: (type, id) => metrics.filter(a => a.agentId === id && a.type === type)
 }

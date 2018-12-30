@@ -46,10 +46,10 @@ module.exports = function setupAgent (AgentModel) {
     })
   }
 
-  function findByUsername () {
+  function findByUsername (username) {
     return AgentModel.findAll({
       where: {
-        username: 'ruben',
+        username,
         connected: true
       }
     })

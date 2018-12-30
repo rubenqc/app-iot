@@ -1,0 +1,32 @@
+{
+  "name": "iot-mqtt",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A Simple IoT Platform - MQTT Server",
+  "main": "server.js",
+  "scripts": {
+    "start-dev": "SET DEBUG=iot-node:* && nodemon server.js",
+    "start": "SET NODE_ENV=production && node server.js",
+    "lint": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubenqc/iot-node.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rubenqc/iot-node/issues"
+  },
+  "homepage": "https://github.com/rubenqc/iot-node#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.9",
+    "standard": "^12.0.1"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "debug": "^4.1.1",
+    "mosca": "^2.8.3",
+    "redis": "^2.8.0"
+  }
+}

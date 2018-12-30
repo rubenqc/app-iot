@@ -56,25 +56,25 @@ test.beforeEach(async () => {
     hasMany: sandbox.spy()
   }
 
-  // Model create Stub
+  // Agent#Model create Stub
   AgentStub.create = sandbox.stub()
   AgentStub.create.withArgs(newAgent).returns(Promise.resolve({
     toJSON () { return newAgent }
   }))
 
-  // Model findOne Stub
+  // Agent#Model findOne Stub
   AgentStub.findOne = sandbox.stub()
   AgentStub.findOne.withArgs(uuidArgs).returns(Promise.resolve(agentFixtures.findByUuid(uuid)))
 
-  // Model findById Stub
+  // Agent#Model findById Stub
   AgentStub.findById = sandbox.stub()
   AgentStub.findById.withArgs(id).returns(Promise.resolve(agentFixtures.findById(id)))
 
-  // Model update Stub
+  // Agent#Model update Stub
   AgentStub.update = sandbox.stub()
   AgentStub.update.withArgs(single, uuidArgs).returns(Promise.resolve(single))
 
-  // Model findAll Stub
+  // Agent#Model findAll Stub
   AgentStub.findAll = sandbox.stub()
   AgentStub.findAll.returns(Promise.resolve(agentFixtures.all))
   AgentStub.findAll.withArgs(connectedArgs).returns(Promise.resolve(agentFixtures.connected))
