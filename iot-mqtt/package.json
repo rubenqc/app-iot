@@ -5,8 +5,8 @@
   "description": "A Simple IoT Platform - MQTT Server",
   "main": "server.js",
   "scripts": {
-    "start-dev": "SET DEBUG=iot-node:* && nodemon server.js",
-    "start": "SET NODE_ENV=production && node server.js",
+    "start-dev": "DEBUG=iot-node:* nodemon server.js",
+    "start": "NODE_ENV=production node server.js",
     "lint": "standard"
   },
   "repository": {
@@ -27,6 +27,7 @@
     "chalk": "^2.4.1",
     "debug": "^4.1.1",
     "mosca": "^2.8.3",
+    "mqtt": "^2.18.8",
     "redis": "^2.8.0"
   }
 }
