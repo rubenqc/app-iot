@@ -4,9 +4,9 @@
   "description": "A simple IoT Platform - DB Module",
   "main": "index.js",
   "scripts": {
-    "test": "DEBUG=iot-node:* nyc --reporter=lcov ava tests/ --verbose",
+    "test": "SET DEBUG=iot-node:* && nyc --reporter=lcov ava tests/ --verbose",
     "lint": "standard",
-    "setup": " DEBUG=iot-node:* node setup.js"
+    "setup": "SET DEBUG=iot-node:* && node setup.js"
   },
   "repository": {
     "type": "git",

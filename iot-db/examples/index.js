@@ -4,11 +4,12 @@ const db = require('../')
 
 async function run() {
     const config = {
-        database: process.env.DB_NAME || 'iot-node',
+        database: process.env.DB_NAME || 'iotnode',
         username: process.env.DB_USER || 'ruben',
         password: process.env.DB_PASS || 'kof2002',
         host: process.env.DB_HOST || 'localhost',
-        dialect: 'mysql'
+        dialect: 'mysql',
+        operatorsAliases:false
     }
 
     const {Agent, Metric} = await db(config).catch(handleFatalError)

@@ -23,13 +23,14 @@ async function setup () {
   }
 
   const config = {
-    database: process.env.DB_NAME || 'iot-node',
+    database: process.env.DB_NAME || 'iotnode',
     username: process.env.DB_USER || 'ruben',
     password: process.env.DB_PASS || 'kof2002',
     host: process.env.DB_HOST || 'localhost',
     dialect: 'mysql',
     logging: s => debug(s),
-    setup: true
+    setup: true,
+    operatorsAliases:false
   }
 
   await db(config).catch(handleFatalError)

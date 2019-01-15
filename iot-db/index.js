@@ -17,7 +17,8 @@ module.exports = async function (config) {
     },
     query: {
       raw: true
-    }
+    },
+    operatorsAliases:false
   })
 
   const sequelize = setupDatabase(config)
