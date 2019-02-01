@@ -1,0 +1,19 @@
+{
+  "name": "iot-agent",
+  "version": "1.0.0",
+  "description": "A Simple IoT Platform - Agent ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubenqc/appiot.git"
+  },
+  "author": "ruben",
+  "license": "IMT",
+  "bugs": {
+    "url": "https://github.com/rubenqc/appiot/issues"
+  },
+  "homepage": "https://github.com/rubenqc/appiot#readme"
+}
